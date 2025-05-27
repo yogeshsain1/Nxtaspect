@@ -21,6 +21,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
 }
 
 .top-bar {
@@ -420,7 +421,7 @@ nav a {
 
 .hero h1 {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-    font-size: 4.5rem;
+    font-size: clamp(2rem, 6vw, 3.5rem);
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1.5rem;
@@ -439,7 +440,7 @@ nav a {
 
 .hero h1 .subtitle {
     display: block;
-    font-size: 2rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 400;
     color: rgba(255, 255, 255, 0.9);
     margin-top: 0.5rem;
@@ -447,7 +448,7 @@ nav a {
 
 .hero-description {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 2.5rem;
@@ -507,15 +508,15 @@ nav a {
     }
 
     .hero h1 {
-        font-size: 3.5rem;
+        font-size: clamp(2rem, 6vw, 3.5rem);
     }
 
     .hero h1 .subtitle {
-        font-size: 1.5rem;
+        font-size: clamp(1rem, 2vw, 1.5rem);
     }
 
     .hero-description {
-        font-size: 1.15rem;
+        font-size: clamp(1rem, 2vw, 1.5rem);
     }
 }
 
@@ -530,15 +531,15 @@ nav a {
     }
 
     .hero h1 {
-        font-size: 2.8rem;
+        font-size: clamp(2rem, 6vw, 3.5rem);
     }
 
     .hero h1 .subtitle {
-        font-size: 1.3rem;
+        font-size: clamp(1rem, 2vw, 1.5rem);
     }
 
     .hero-description {
-        font-size: 1.1rem;
+        font-size: clamp(1rem, 2vw, 1.5rem);
         margin-left: auto;
         margin-right: auto;
     }
@@ -559,20 +560,20 @@ nav a {
 
 @media (max-width: 480px) {
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: clamp(2rem, 6vw, 3.5rem);
     }
 
     .hero h1 .subtitle {
-        font-size: 1.1rem;
+        font-size: clamp(1rem, 2vw, 1.5rem);
     }
 
     .hero-description {
-        font-size: 1rem;
+        font-size: clamp(1rem, 2vw, 1.5rem);
     }
 
     .hero-badge {
-        font-size: 0.8rem;
-        padding: 0.4rem 1rem;
+        font-size: clamp(0.8rem, 1.5vw, 1rem);
+        padding: clamp(0.4rem, 1vw, 0.6rem) clamp(1rem, 2vw, 0.8rem);
     }
 }
 
@@ -632,7 +633,7 @@ nav a {
 }
 
 .services {
-    padding: 6rem var(--spacing);
+    padding: clamp(2rem, 6vw, 6rem) var(--spacing);
     background: linear-gradient(to bottom, #f8f9fa, #ffffff);
     position: relative;
     overflow: hidden;
@@ -925,7 +926,7 @@ nav a {
 
 @media (max-width: 768px) {
     .services {
-        padding: 4rem 1.5rem;
+        padding: clamp(2rem, 6vw, 6rem) 1.5rem;
     }
 
     .services-header h2 {
@@ -1000,7 +1001,7 @@ nav a {
 .cta-section {
     background: #0052cc;
     color: white;
-    padding: 6rem var(--spacing);
+    padding: clamp(2rem, 6vw, 6rem) var(--spacing);
     text-align: left;
     position: relative;
     overflow: hidden;
@@ -1019,7 +1020,7 @@ nav a {
 
 .cta-section h1 {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-    font-size: 4.5rem;
+    font-size: clamp(2rem, 6vw, 4.5rem);
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -1303,7 +1304,7 @@ nav a {
 
 @media (max-width: 768px) {
     .cta-section {
-        padding: 4rem 1.5rem;
+        padding: clamp(2rem, 6vw, 6rem) 1.5rem;
         min-height: auto;
     }
 
@@ -1315,7 +1316,7 @@ nav a {
     }
 
     .cta-section h1 {
-        font-size: 3rem;
+        font-size: clamp(2rem, 6vw, 3rem);
         text-align: center;
         opacity: 1;
         visibility: visible;
@@ -1373,7 +1374,7 @@ footer {
 .why-choose-us {
     background: linear-gradient(45deg, var(--primary), #2a3990);
     color: white;
-    padding: 4rem var(--spacing);
+    padding: clamp(2rem, 6vw, 6rem) var(--spacing);
     width: 100%;
 }
 
@@ -1432,7 +1433,7 @@ footer {
 
 @media (max-width: 768px) {
     .why-choose-us {
-        padding: 3rem 1rem;
+        padding: clamp(2rem, 6vw, 6rem) 1rem;
     }
 
     .features-grid {
@@ -1448,7 +1449,7 @@ footer {
 
 /* Client Section */
 .clients {
-    padding: 4rem var(--spacing);
+    padding: clamp(2rem, 6vw, 6rem) var(--spacing);
     background: white;
     text-align: center;
     overflow: hidden;
@@ -1612,7 +1613,7 @@ footer {
 
 /* Contact Page Styles */
 .contact-page {
-    padding: 4rem var(--spacing);
+    padding: clamp(2rem, 6vw, 6rem) var(--spacing);
     background: var(--bg-light);
 }
 
@@ -1704,7 +1705,7 @@ footer {
 .contact-hero {
     background: linear-gradient(45deg, var(--primary), #2a3990);
     color: white;
-    padding: 6rem var(--spacing);
+    padding: clamp(2rem, 6vw, 6rem) var(--spacing);
     text-align: center;
 }
 
@@ -2751,6 +2752,42 @@ body {
   max-width: 100% !important;
 }
 /* --- END FIX LEFT WHITE LINE & HORIZONTAL SCROLL --- */
+
+/* Smart responsive layout improvements */
+body {
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+}
+
+.container, .page-wrapper, main, .services-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hero-section h1, h1.hero-title, .erp-heading, .company-name {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+.hero-section .subtitle, .erp-subheading, .hero-subtitle, p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.hero-section, .features-section, .solutions-section, .cta-section, .erp-industries, .erp-flow {
+  padding-top: clamp(2rem, 6vw, 6rem);
+  padding-bottom: clamp(2rem, 6vw, 6rem);
+}
+
+.feature-card, .solution-card, .erp-card {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img, .solution-image img, .erp-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 
 

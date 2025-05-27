@@ -3,6 +3,7 @@ body {
     font-family: 'Montserrat', Arial, sans-serif;
     background: #fff;
     color: #222;
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
 }
 
 .navbar {
@@ -16,10 +17,10 @@ body {
     transition: box-shadow 0.3s;
 }
 
-.container {
+.container, .page-wrapper, main, .services-page {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 24px;
 }
 
 .nav-flex {
@@ -116,7 +117,7 @@ body {
 }
 
 .company-name {
-    font-size: 2.8rem;
+    font-size: clamp(2rem, 6vw, 3.5rem);
     font-weight: 700;
     letter-spacing: 0.12em;
     margin-bottom: 0.5em;
@@ -126,7 +127,7 @@ body {
 }
 
 .hero-title {
-    font-size: 2.2rem;
+    font-size: clamp(2rem, 6vw, 3.5rem);
     font-weight: 700;
     margin-bottom: 1em;
     letter-spacing: 0.04em;
@@ -136,7 +137,7 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 400;
     color: #fff;
     margin-bottom: 0;
@@ -357,4 +358,30 @@ body {
     .dropdown-menu li a {
         padding: 8px 0;
     }
+}
+
+/* Smart responsive layout improvements */
+.hero-section h1, h1.hero-title, .erp-heading, .company-name {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+.hero-section .subtitle, .erp-subheading, .hero-subtitle, p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.hero-section, .features-section, .solutions-section, .cta-section, .erp-industries, .erp-flow {
+    padding-top: clamp(2rem, 6vw, 6rem);
+    padding-bottom: clamp(2rem, 6vw, 6rem);
+}
+
+.feature-card, .solution-card, .erp-card {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img, .solution-image img, .erp-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 } 
